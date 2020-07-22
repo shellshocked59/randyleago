@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 $databases['default']['default'] = array(
 	'database' => 'drupal_randy_cms',
 	'username' => 'admin',
