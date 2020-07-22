@@ -1,0 +1,14 @@
+uuid: 7714006f-2c55-4045-b7e7-86b269ed8ff4
+name: 'Randy Leago'
+mail: ewashburn88@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
