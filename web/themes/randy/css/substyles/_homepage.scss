@@ -1,0 +1,62 @@
+
+.hero{
+	background-image: url("/themes/randy/images/hero.jpeg");
+    width:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    padding:100px 0;
+	h1{
+		color:white;
+		margin:0 0 100px 0;
+		text-align:center;
+		font-size:40px;
+	}
+	.hero-link{
+		text-align:center;
+		margin:0 auto;
+		display:block;
+		max-width:200px;
+	}
+}
+
+.featured-tour{
+	max-width:1280px!important;
+	margin:100px auto 100px auto!important;
+	.tour-image{
+		background-image: url("/themes/randy/images/tour.jpg");
+		background-size:contain;
+	    background-repeat:no-repeat;
+	    background-position: center center;
+	    min-width:200px;
+		min-height:100px;
+	}
+	
+    .tour-link{
+    	max-width:200px;
+    	margin:50px auto 0 auto;
+    	display:block;
+    }
+}
+.headshot{
+	max-width:1280px!important;
+	margin:0 auto 0 auto!important;
+	min-height:200px;
+	padding-bottom:200px!important;
+	.headshot-img{
+		padding:0;
+		margin:0;
+		.img-container{
+		    background-image: url("/themes/randy/images/portrait.jpeg");
+		    background-size:contain;
+		    background-repeat:no-repeat;
+		    background-position: center center;
+		    width:100%;
+		    height:100%;
+		 }
+	}
+	.headshot-bio{
+		padding:10px;
+		margin:0;
+	}
+}

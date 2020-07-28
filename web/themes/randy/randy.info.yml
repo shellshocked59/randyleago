@@ -5,3 +5,6 @@ package: Randy
 core_version_requirement: ^9
 version: VERSION
 base theme: false
+
+libraries:
+  - randy/global-styling

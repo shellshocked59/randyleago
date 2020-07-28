@@ -1,7 +1,11 @@
+#https://www.drupal.org/docs/theming-drupal/adding-stylesheets-css-and-javascript-js-to-a-drupal-theme
 global-styling:
   version: VERSION
   css:
-    base:
-      css/layout.css: {}
-    layout:
-      css/layout.css: {}
+    theme:
+      css/styles.css: {}
+      uikit/css/uikit.min.css: {}
+      uikit/css/uikit-rtl.min.css: {}
+  js:
+    uikit/js/uikit.min.js: {}
+    #uikit/js/uikit-icons.min.js: {}
