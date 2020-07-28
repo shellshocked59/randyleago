@@ -1,0 +1,20 @@
+uuid: c549cf2d-a85d-4ef7-9f7b-3d0a1f24ed71
+langcode: en
+status: true
+dependencies:
+  theme:
+    - randy
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: randy_page_title
+theme: randy
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

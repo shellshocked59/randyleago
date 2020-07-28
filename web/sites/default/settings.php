@@ -772,4 +772,4 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 }
 
 
-$settings['config_sync_directory'] = 'sites/default/files/config_oH02_sfy5zy9UvrmDjM8qrtaqgww7sn13NYEjhopLDnPIFqXwDsXNLIyreO0SQu0bJ3ASFwWZQ/sync';
+$settings['config_sync_directory'] = 'sites/default/config/sync';

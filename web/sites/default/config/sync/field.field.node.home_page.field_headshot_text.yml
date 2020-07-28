@@ -1,0 +1,21 @@
+uuid: 57856a6a-d147-4bdd-baa3-da3857ef3126
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headshot_text
+    - node.type.home_page
+  module:
+    - text
+id: node.home_page.field_headshot_text
+field_name: field_headshot_text
+entity_type: node
+bundle: home_page
+label: 'Headshot Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
