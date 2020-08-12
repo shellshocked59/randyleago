@@ -66,7 +66,9 @@
  * @see template_preprocess_node()
  */
 #}
-{%
+{#{ dump(node|keys) }#}
+
+{% 
   set classes = [
     'node',
     'node--type-' ~ node.bundle|clean_class,
@@ -81,31 +83,25 @@
 {{ attach_library('bartik/classy.node') }}
 <article{{ attributes.addClass(classes) }}>
   <div class="hero" uk-parallax="bgy: -200">
-    <h1>The Music & Artistry of Randy Leago</h1>
+    <h1>{{ content.field_hero_title.0 }}</h1>
     <div class="hero-link-wrapper">
-      <a class="cta hero-link" href="/tours">
-        Current Tour Dates
-      </a>
+      <div class="cta hero-link">
+      {{ content.field_hero_link.0 }}
+      </div>
     </div>
   </div>
   <div class="featured-tour">
     <div class="uk-grid">
-      <div class="tour-text uk-width-2-3">
-        <h3>2020 Tour</h3>
-        <h4>The Beach Boys</h4>
-        <h5>12 Sides of Summer</h5>
-      </div>
-      <div class="tour-image uk-width-1-3"></div>
+      <div class="tour-text wysiwyg uk-width-2-3">{{ content.field_tour_info.0 }}</div>
+      <div class="tour-image uk-width-1-3" style="background-image:url('{{ file_url(content.field_tour_image['#items'].entity.uri.value) }}')"></div>
     </div>
-    <a href="#" class="cta tour-link">
-      Reviews
-    </a>
+    <div class="cta tour-link">
+      {{ content.field_tour_link.0 }}
+    </div>
   </div>
   <div class="headshot clearfix uk-grid">
-    <div class="headshot-img uk-width-1-3"><div class="img-container"></div></div>
-    <div class="headshot-bio uk-width-2-3">
-      Randy is a saxophone & woodwind artist residing in Nashville, TN. With over 40 years of playing he has performed around the world on stage and televion and in studio.
-    </div>
+    <div class="headshot-img uk-width-1-3"><div class="img-container" style="background-image:url('{{ file_url(content.field_headshot_image['#items'].entity.uri.value) }}')"></div></div>
+    <div class="headshot-bio wysiwg uk-width-2-3">{{ content.field_headshot_text.0 }}</div>
   </div>
 
 </article>
