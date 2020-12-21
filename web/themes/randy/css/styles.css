@@ -1,4 +1,6 @@
 /* sass --watch styles.scss style.css */
+/* cd /var/www/drupal_randy/web/themes/randy/css */
+/* sass --watch styles.scss styles.css */
 /* variables */
 #block-randy-account-menu,
 #block-randy-branding,
@@ -88,7 +90,7 @@ section {
   margin-bottom: 10px;
   text-decoration: none;
 }
-.cta:hover {
+.cta:hover, .cta a:hover {
   text-decoration: none;
   filter: alpha(opacity=80);
   -moz-opacity: 0.8;
@@ -96,6 +98,10 @@ section {
   background-color: #117EAD;
   border-color: #117EAD;
   color: #ffffff;
+}
+.cta a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .cta-secondary {

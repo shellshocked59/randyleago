@@ -77,7 +77,7 @@ section{
     margin-right:10px;
     margin-bottom:10px;
     text-decoration:none;
-    &:hover{
+    &:hover, & a:hover{
     	text-decoration: none;
 	    filter: alpha(opacity=80);
 	    -moz-opacity: 0.8;
@@ -85,6 +85,10 @@ section{
 	    background-color: #117EAD;
     	border-color: #117EAD;
     	color:#ffffff;
+    }
+    a{
+      color: #ffffff;
+      text-decoration: none;
     }
 }
 .cta-secondary{
